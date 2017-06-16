@@ -1,0 +1,7 @@
+---
+applications:
+- name: hello-world-web
+  memory: 512M
+  random-route: true
+  path: build/libs/resource-app.jar
+  

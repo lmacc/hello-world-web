@@ -1,0 +1,16 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: limaofeng/gradle-alpine}
+    
+    
+inputs:
+  - name: hello-world-web
+  
+outputs:
+  - name: resource-app
+  
+run:
+  path: ./hello-world-web/ci/build.sh
